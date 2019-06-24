@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServerLesson"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="460.045" Width="338.951">
     <Grid>
-        
+        <ComboBox Name="ipsComboBox" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="portTextBox" HorizontalAlignment="Left" Height="23" Margin="135,40,0,0" TextWrapping="Wrap" Text="12345" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ip" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.583,0.933"/>
+        <Label Content="Port" HorizontalAlignment="Left" Margin="135,9,0,0" VerticalAlignment="Top"/>
+        <Button Name="startStopButton" Click="StartStopButtonClick" Content="Start" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="75" IsDefault="True"/>
+        <TextBox Name="logTextBox" HorizontalAlignment="Left" Height="274" Margin="10,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="305"/>
+        <Button Name="clearButton" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,389,0,0"/>
+        <Button Name="closeButton" Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="92,389,0,0" IsCancel="True"/>
+
     </Grid>
 </Window>
